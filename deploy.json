@@ -1,0 +1,27 @@
+{
+    "machine": {
+        "host": "$host",
+        "username": "$username",
+        "password": "$password"
+    },
+    "commands": [
+        "sudo apt-get update",
+        "sudo apt-get install -y nginx",
+        "sudo ufw allow 'Nginx Full'",
+
+        "sudo apt-get update",
+        "sudo apt-get install -y letsencrypt",
+        "sudo letsencrypt certonly --standalone --email developersworkspace@gmail.com -d developersworkspace.co.za",
+
+        "cp /root/nginx.conf /etc/nginx/nginx.conf",
+        "sudo systemctl reload nginx",
+        "sudo systemctl enable nginx"
+    ],
+    "directories": [],
+    "files": [
+        {
+             "source": "$workspace/nginx.conf",
+            "destination": "/root/nginx.conf"
+        }
+    ]
+}
