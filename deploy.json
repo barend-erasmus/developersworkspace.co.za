@@ -17,6 +17,10 @@
         "sudo apt-get install -y letsencrypt",
         "sudo letsencrypt certonly --standalone --agree-tos --email developersworkspace@gmail.com -d z1.openservices.co.za",
 
+        "sudo apt-get update",
+        "sudo apt-get install -y letsencrypt",
+        "sudo letsencrypt certonly --standalone --agree-tos --email developersworkspace@gmail.com -d url-shortener.openservices.co.za",
+
         "cp /root/nginx.conf /etc/nginx/nginx.conf",
         "sudo systemctl reload nginx",
         "sudo systemctl enable nginx"
