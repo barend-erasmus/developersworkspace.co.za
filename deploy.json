@@ -15,7 +15,7 @@
 
         "sudo apt-get update",
         "sudo apt-get install -y letsencrypt",
-        "sudo letsencrypt certonly --standalone --agree-tos --email developersworkspace@gmail.com -d z1.openservices.co.za",
+        "sudo letsencrypt certonly --standalone --agree-tos --email developersworkspace@gmail.com -d oauth2-framework.openservices.co.za",
 
         "sudo apt-get update",
         "sudo apt-get install -y letsencrypt",
